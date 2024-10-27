@@ -1,0 +1,132 @@
+/* Navbar with additional padding and spacing */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding for spacious feel */
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for better background visibility */
+  color: #333; /* Dark text for better contrast */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px; /* Rounding the edges slightly */
+  margin-bottom: 30px; /* Adds space between navbar and rest of the content */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.navbar-title {
+  font-size: 2rem; /* Slightly larger font for visibility */
+  font-weight: bold;
+  margin: 0;
+  padding-right: 20px; /* Adds spacing between title and search input */
+}
+
+.search-input {
+  width: 250px; /* Increased width for better readability */
+  padding: 5px 10px;
+  border: 2px solid #feb47b; /* Light border for visibility */
+  border-radius: 20px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  color: #333;
+  margin-right: 20px; /* Spacing between search and toggle button */
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+}
+
+/* Placeholder color for search input */
+.search-input::placeholder {
+  color: #555; /* Darker placeholder color for better visibility */
+}
+
+/* Dark Mode adjustments */
+.navbar.dark {
+  background: rgba(66, 66, 66, 0.8); /* Semi-transparent dark background */
+  color: #e0e0e0;
+}
+
+.theme-toggle {
+  background: #ffb6c1;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 18px; /* Larger padding for easier clicking */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Additional styling for improved light mode visibility */
+.navbar.light {
+  background: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+  color: #333; /* Ensuring dark text for contrast */
+}
+
+.navbar.light .search-input {
+  background: rgba(255, 255, 255, 0.9); /* White background for search input */
+  color: #333; /* Dark text in search input */
+}
+
+.navbar.light .theme-toggle {
+  background: #ff7e5f; /* Darker button for visibility in light mode */
+  color: #fff; /* White text on toggle button */
+}
+
+.navbar.light .theme-toggle:hover {
+  background: #feb47b; /* Hover effect for toggle button */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 15px 20px; /* Reduced padding for smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      text-align: center;
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .navbar-title {
+      font-size: 1.5rem; /* Adjust font size for smaller screens */
+      margin-bottom: 10px; /* Adds space below title */
+      padding-left: 30%;
+  }
+
+  .search-input {
+      width: 95%; /* Full width for search input on smaller screens */
+      margin: 10px 0; /* Margin for spacing */
+  }
+
+  .theme-toggle {
+      width: 100%; /* Full width for toggle button on smaller screens */
+      padding: 12px; /* Adjust padding for better touch targets */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px 15px; /* Further reduced padding */
+      text-align: center;
+  }
+
+  .navbar-title {
+      font-size: 1.25rem; /* Smaller font size for very small screens */
+      text-align: center;
+  }
+
+  .search-input {
+      width: 90%; /* Slightly reduced width for very small screens */
+  }
+
+  .theme-toggle {
+      padding: 10px; /* Adjust padding for smaller devices */
+  }
+}

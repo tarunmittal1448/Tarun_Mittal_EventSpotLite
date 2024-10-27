@@ -1,0 +1,57 @@
+/* EventCard.css */
+
+.event-card {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px; /* Margin for spacing between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px; /* Set a maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Light mode styles */
+  .event-card.light {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    border: 2px solid #ffcc80; /* Light peach border */
+    color: #333; /* Dark text color */
+  }
+  
+  .event-card.light h3 {
+    color: #333; /* Dark color for text in light mode */
+  }
+  
+  .event-card.light p {
+    color: #555; /* Dark gray for description text */
+  }
+  
+  /* Dark mode styles */
+  .event-card.dark {
+    background: rgba(50, 50, 50, 0.9); /* Dark gray background */
+    border: 2px solid rgba(50,50,50,0.9); /* Brighter border for dark mode */
+    color: #e0e0e0; /* Light text color */
+
+  }
+  
+  .event-card.dark h3 {
+    color: #e0e0e0; /* Light color for text in dark mode */
+  }
+  
+  .event-card.dark p {
+    color: #d3d3d3; /* Lighter gray for description text in dark mode */
+  }
+  
+  .event-card img {
+    width: 100%; /* Full width images */
+    border-radius: 8px; /* Slight rounding for images */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
