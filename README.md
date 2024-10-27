@@ -35,7 +35,6 @@ EventSpot Lite is a responsive single-page web application designed for discover
   bash
     npm run dev
 
-```
 
 ## Usage
 
