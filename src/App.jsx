@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import EventCard from './Components/EventCard';
-import LoadingSpinner from './components/LoadingSpinner';
-import Modal from './components/Modal';
+import Navbar from './components/Navbar.jsx';
+import EventCard from './Components/EventCard.jsx';
+import LoadingSpinner from './components/LoadingSpinner.jsx';
+import Modal from './components/Modal.jsx';
 
 const mockData = [
   { id: 1, name: "Music Concert", date: "2024-11-10", location: "New York", description: "An amazing music event.", image: "https://via.placeholder.com/300?text=Music+Concert" },
