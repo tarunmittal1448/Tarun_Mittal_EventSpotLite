@@ -19,21 +19,26 @@ EventSpot Lite is a responsive single-page web application designed for discover
 
 ## Installation
 1. Clone the repository:  
-   bash  
+   ```bash  
    git clone https://github.com/tarunmittal1448/Tarun_Mittal_EventSpotLite.git 
 
 
 2. Navigate to the directory:
-   bash
+   ```bash
    cd Tarun_Mittal_EventSpotLite
 
 3. Install the dependencies: 
-   bash
-      npm install
+   ```bash
+   npm install
 
 4. Run the Application:
-  bash
-    npm run dev
+   ```bash
+   npm run dev
+
+## ScreenShots
+
+![Screenshot 2024-10-27 182326](https://github.com/user-attachments/assets/8595e421-dae3-43b7-bcd7-8b52ecca59e4)
+
 
 
 ## Usage
